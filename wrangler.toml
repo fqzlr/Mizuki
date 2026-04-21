@@ -1,0 +1,8 @@
+name = "mizuki"
+compatibility_date = "20260421" # 更为今日
+
+[assets]
+directory = "./dist"
+
+[vars]
+NODE_VERSION = "22"
