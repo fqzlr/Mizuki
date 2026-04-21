@@ -26,7 +26,7 @@ const SITE_TIMEZONE = 8; //设置你的网站时区 from -12 to 12 default in UT
 export const siteConfig: SiteConfig = {
 	title: "Fqzlr",
 	subtitle: "fqzlrの博客",
-	siteURL: "https://blog.fqzlr.com/", // 请替换为你的站点URL，以斜杠结尾
+	siteURL: "https://bk.fqzlr.com/", // 请替换为你的站点URL，以斜杠结尾
 	siteStartDate: "2025-01-01", // 站点开始运行日期，用于站点统计组件计算运行天数
 
 	timeZone: SITE_TIMEZONE,
@@ -686,7 +686,7 @@ export const pioConfig: import("./types/config").PioConfig = {
 		home: "Click here to go back to homepage!", // 首页提示
 		skin: ["Want to see my new outfit?", "The new outfit looks great~"], // 换装提示
 		close: "QWQ See you next time~", // 关闭提示
-		link: "https://github.com/LyraVoid/Mizuki", // 关于链接
+		link: "https://github.com/LyraVoid/fqlzr", // 关于链接
 	},
 };
 

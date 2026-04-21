@@ -42,7 +42,7 @@ export default defineConfig({
 	integrations: [
 		oddmisc({
 			umami: {
-				shareUrl: "https://umami.fqzlr.com/share/kHCJG2ZUL1r6q5Js", // Umami 分享链接（见下方说明）如设置为 false 则禁用组件的umami访问量信息显示,不影响umami统计
+				shareUrl: "https://umami.fqzlr.com/share/fzA2n2k6sqTT3PET", // Umami 分享链接（见下方说明）如设置为 false 则禁用组件的umami访问量信息显示,不影响umami统计
 			},
 		}),
 		swup({
