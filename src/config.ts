@@ -57,9 +57,9 @@ export const siteConfig: SiteConfig = {
 		// 顶栏标题文本
 		text: "fqzlr",
 		// 顶栏标题图标路径，默认使用 public/assets/home/home.webp
-		icon: "assets/home/home.png",
+		icon: "assets/home/home.webp",
 		// 网站Logo图片路径
-		logo: "assets/home/default-logo.png",
+		logo: "assets/home/default-logo.webp",
 	},
 
 	// 页面自动缩放配置
@@ -112,7 +112,7 @@ export const siteConfig: SiteConfig = {
 	// 壁纸模式配置
 	wallpaperMode: {
 		// 默认壁纸模式：banner=顶部横幅，fullscreen=全屏壁纸，none=无壁纸
-		defaultMode: "banner",
+		defaultMode: "fullscreen",
 		// 整体布局方案切换按钮显示设置（默认："desktop"）
 		// "off" = 不显示
 		// "mobile" = 仅在移动端显示
@@ -125,16 +125,12 @@ export const siteConfig: SiteConfig = {
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
 			desktop: [
-				"/assets/desktop-banner/1.webp",
-				// "/assets/desktop-banner/2.webp",
-				// "/assets/desktop-banner/3.webp",
-				// "/assets/desktop-banner/4.webp",
+				"/assets/desktop-banner/28.webp",
+				"/assets/desktop-banner/29.webp",
 			], // 桌面横幅图片
 			mobile: [
-				"/assets/mobile-banner/1.webp",
-				// "/assets/mobile-banner/2.webp",
-				// "/assets/mobile-banner/3.webp",
-				// "/assets/mobile-banner/4.webp",
+				"/assets/mobile-banner/28.webp",
+				"/assets/mobile-banner/29.webp",
 			], // 移动横幅图片
 		}, // 使用本地横幅图片
 
@@ -142,7 +138,7 @@ export const siteConfig: SiteConfig = {
 
 		carousel: {
 			enable: true, // 为 true 时：为多张图片启用轮播。为 false 时：从数组中随机显示一张图片
-			interval: 3, // 轮播间隔时间（秒）
+			interval: 30, // 轮播间隔时间（秒）
 		},
 
 		waves: {
@@ -245,25 +241,89 @@ export const siteConfig: SiteConfig = {
 export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	src: {
 		desktop: [
-			"/assets/desktop-banner/1.webp",
-			"/assets/desktop-banner/2.webp",
-			"/assets/desktop-banner/3.webp",
-			"/assets/desktop-banner/4.webp",
+			"/assets/desktop-banner/01.webp",
+			"/assets/desktop-banner/02.webp",
+			"/assets/desktop-banner/03.webp",
+			"/assets/desktop-banner/04.webp",
+			"/assets/desktop-banner/05.webp",
+			"/assets/desktop-banner/06.webp",
+			"/assets/desktop-banner/07.webp",
+			"/assets/desktop-banner/08.webp",
+			"/assets/desktop-banner/09.webp",
+			"/assets/desktop-banner/10.webp",
+			"/assets/desktop-banner/11.webp",
+			"/assets/desktop-banner/12.webp",
+			"/assets/desktop-banner/13.webp",
+			"/assets/desktop-banner/14.webp",
+			"/assets/desktop-banner/15.webp",
+			"/assets/desktop-banner/16.webp",
+			"/assets/desktop-banner/17.webp",
+			"/assets/desktop-banner/18.webp",
+			"/assets/desktop-banner/19.webp",
+			"/assets/desktop-banner/20.webp",
+			"/assets/desktop-banner/21.webp",
+			"/assets/desktop-banner/22.webp",
+			"/assets/desktop-banner/23.webp",
+			"/assets/desktop-banner/24.webp",
+			"/assets/desktop-banner/25.webp",
+			"/assets/desktop-banner/26.webp",
+			"/assets/desktop-banner/27.webp",
+			"/assets/desktop-banner/28.webp",
+			"/assets/desktop-banner/29.webp",
+			"/assets/desktop-banner/30.webp",
+			"/assets/desktop-banner/31.webp",
+			"/assets/desktop-banner/32.webp",
+			"/assets/desktop-banner/33.webp",
+			"/assets/desktop-banner/34.webp",
+			"/assets/desktop-banner/35.webp",
+			"/assets/desktop-banner/36.webp",
 		], // 桌面横幅图片
 		mobile: [
-			"/assets/mobile-banner/1.webp",
-			"/assets/mobile-banner/2.webp",
-			"/assets/mobile-banner/3.webp",
-			"/assets/mobile-banner/4.webp",
+			"/assets/mobile-banner/01.webp",
+			"/assets/mobile-banner/02.webp",
+			"/assets/mobile-banner/03.webp",
+			"/assets/mobile-banner/04.webp",
+			"/assets/mobile-banner/05.webp",
+			"/assets/mobile-banner/06.webp",
+			"/assets/mobile-banner/07.webp",
+			"/assets/mobile-banner/08.webp",
+			"/assets/mobile-banner/09.webp",
+			"/assets/mobile-banner/10.webp",
+			"/assets/mobile-banner/11.webp",
+			"/assets/mobile-banner/12.webp",
+			"/assets/mobile-banner/13.webp",
+			"/assets/mobile-banner/14.webp",
+			"/assets/mobile-banner/15.webp",
+			"/assets/mobile-banner/16.webp",
+			"/assets/mobile-banner/17.webp",
+			"/assets/mobile-banner/18.webp",
+			"/assets/mobile-banner/19.webp",
+			"/assets/mobile-banner/20.webp",
+			"/assets/mobile-banner/21.webp",
+			"/assets/mobile-banner/22.webp",
+			"/assets/mobile-banner/23.webp",
+			"/assets/mobile-banner/24.webp",
+			"/assets/mobile-banner/25.webp",
+			"/assets/mobile-banner/26.webp",
+			"/assets/mobile-banner/27.webp",
+			"/assets/mobile-banner/28.webp",
+			"/assets/mobile-banner/29.webp",
+			"/assets/mobile-banner/30.webp",
+			"/assets/mobile-banner/31.webp",
+			"/assets/mobile-banner/32.webp",
+			"/assets/mobile-banner/33.webp",
+			"/assets/mobile-banner/34.webp",
+			"/assets/mobile-banner/35.webp",
+			"/assets/mobile-banner/36.webp",
 		], // 移动横幅图片
 	}, // 使用本地横幅图片
 	position: "center", // 壁纸位置，等同于 object-position
 	carousel: {
-		enable: true, // 启用轮播
-		interval: 5, // 轮播间隔时间（秒）
+		enable: false, // 启用轮播
+		interval: 30, // 轮播间隔时间（秒）
 	},
 	zIndex: -1, // 层级，确保壁纸在背景层
-	opacity: 0.8, // 壁纸透明度
+	opacity: 1, // 壁纸透明度
 	blur: 1, // 背景模糊程度
 };
 
@@ -279,19 +339,19 @@ export const navBarConfig: NavBarConfig = {
 			children: [
 				{
 					name: "GitHub",
-					url: "https://github.com/LyraVoid/Mizuki",
+					url: "https://github.com/LyraVoid/fqzlr",
 					external: true,
 					icon: "fa7-brands:github",
 				},
 				{
 					name: "Bilibili",
-					url: "https://space.bilibili.com/701864046",
+					url: "https://space.bilibili.com/2017273493",
 					external: true,
 					icon: "fa7-brands:bilibili",
 				},
 				{
 					name: "Gitee",
-					url: "https://gitee.com/matsuzakayuki/Mizuki",
+					url: "https://gitee.com/matsuzakayuki/fqzlr",
 					external: true,
 					icon: "mdi:git",
 				},
