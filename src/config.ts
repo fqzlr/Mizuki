@@ -149,8 +149,8 @@ export const siteConfig: SiteConfig = {
 
 		// PicFlow API支持(智能图片API)
 		imageApi: {
-			enable: false, // 启用图片API
-			url: "http://domain.com/api_v2.php?format=text&count=4", // API地址，返回每行一个图片链接的文本
+			enable: true, // 启用图片API
+			url: "https://tu.fqzlr.com/random?type=url&form=text&dir=random&orientation=auto", // API地址，返回每行一个图片链接的文本
 		},
 		// 这里需要使用PicFlow API的Text返回类型,所以我们需要format=text参数
 		// 项目地址:https://github.com/matsuzaka-yuki/PicFlow-API
@@ -241,42 +241,8 @@ export const siteConfig: SiteConfig = {
 export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	src: {
 		desktop: [
-			"/assets/desktop-banner/01.webp",
-			"/assets/desktop-banner/02.webp",
-			"/assets/desktop-banner/03.webp",
-			"/assets/desktop-banner/04.webp",
-			"/assets/desktop-banner/05.webp",
-			"/assets/desktop-banner/06.webp",
-			"/assets/desktop-banner/07.webp",
-			"/assets/desktop-banner/08.webp",
-			"/assets/desktop-banner/09.webp",
-			"/assets/desktop-banner/10.webp",
-			"/assets/desktop-banner/11.webp",
-			"/assets/desktop-banner/12.webp",
-			"/assets/desktop-banner/13.webp",
-			"/assets/desktop-banner/14.webp",
-			"/assets/desktop-banner/15.webp",
-			"/assets/desktop-banner/16.webp",
-			"/assets/desktop-banner/17.webp",
-			"/assets/desktop-banner/18.webp",
-			"/assets/desktop-banner/19.webp",
-			"/assets/desktop-banner/20.webp",
-			"/assets/desktop-banner/21.webp",
-			"/assets/desktop-banner/22.webp",
-			"/assets/desktop-banner/23.webp",
-			"/assets/desktop-banner/24.webp",
-			"/assets/desktop-banner/25.webp",
-			"/assets/desktop-banner/26.webp",
 			"/assets/desktop-banner/27.webp",
 			"/assets/desktop-banner/28.webp",
-			"/assets/desktop-banner/29.webp",
-			"/assets/desktop-banner/30.webp",
-			"/assets/desktop-banner/31.webp",
-			"/assets/desktop-banner/32.webp",
-			"/assets/desktop-banner/33.webp",
-			"/assets/desktop-banner/34.webp",
-			"/assets/desktop-banner/35.webp",
-			"/assets/desktop-banner/36.webp",
 		], // 桌面横幅图片
 		mobile: [
 			"/assets/mobile-banner/01.webp",
@@ -305,8 +271,6 @@ export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 			"/assets/mobile-banner/24.webp",
 			"/assets/mobile-banner/25.webp",
 			"/assets/mobile-banner/26.webp",
-			"/assets/mobile-banner/27.webp",
-			"/assets/mobile-banner/28.webp",
 			"/assets/mobile-banner/29.webp",
 			"/assets/mobile-banner/30.webp",
 			"/assets/mobile-banner/31.webp",
@@ -323,8 +287,8 @@ export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 		interval: 30, // 轮播间隔时间（秒）
 	},
 	zIndex: -1, // 层级，确保壁纸在背景层
-	opacity: 0, // 壁纸透明度
-	blur: 1, // 背景模糊程度
+	opacity: 0.8, // 壁纸透明度
+	blur: 0, // 背景模糊程度
 };
 
 export const navBarConfig: NavBarConfig = {
@@ -507,10 +471,10 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 };
 
 export const commentConfig: CommentConfig = {
-	enable: false, // 启用评论功能。当设置为 false 时，评论组件将不会显示在文章区域。
+	enable: true, // 启用评论功能。当设置为 false 时，评论组件将不会显示在文章区域。
 	system: "twikoo", // 评论系统选择: "twikoo" | "giscus"
 	twikoo: {
-		envId: "https://twikoo.vercel.app",
+		envId: "https://pl.fqzlr.com",
 		lang: SITE_LANG,
 	},
 	giscus: {
@@ -535,7 +499,7 @@ export const shareConfig: ShareConfig = {
 
 export const announcementConfig: AnnouncementConfig = {
 	title: "", // 公告标题，填空使用i18n字符串Key.announcement
-	content: "ブログへようこそ！これはサンプルの告知です", // 公告内容
+	content: "人生本是旷野，不必困于既定的轨道", // 公告内容
 	closable: true, // 允许用户关闭公告
 	link: {
 		enable: true, // 启用链接
@@ -558,8 +522,9 @@ export const musicPlayerConfig: MusicPlayerConfig = {
 };
 
 export const footerConfig: FooterConfig = {
-	enable: false, // 是否启用Footer HTML注入功能
-	customHtml: "", // HTML格式的自定义页脚信息，例如备案号等，默认留空
+	enable: true, // 是否启用Footer HTML注入功能
+	customHtml:
+		'<a href="https://icp.gov.moe/?keyword=20268200" target="_blank">萌ICP备20268200号</a>', // HTML格式的自定义页脚信息，例如备案号等，默认留空
 	// 也可以直接编辑 FooterConfig.html 文件来添加备案号等自定义内容
 	// 注意：若 customHtml 不为空，则使用 customHtml 中的内容；若 customHtml 留空，则使用 FooterConfig.html 文件中的内容
 	// FooterConfig.html 可能会在未来的某个版本弃用
@@ -746,7 +711,7 @@ export const pioConfig: import("./types/config").PioConfig = {
 		home: "Click here to go back to homepage!", // 首页提示
 		skin: ["Want to see my new outfit?", "The new outfit looks great~"], // 换装提示
 		close: "QWQ See you next time~", // 关闭提示
-		link: "https://github.com/LyraVoid/fqlzr", // 关于链接
+		link: "https://github.com/fqlzr", // 关于链接
 	},
 };
 
